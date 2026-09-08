@@ -1,3 +1,4 @@
+package Semana2;
 public class EjecutarSemanaDos {
     public static void main(String[] args) {
         
@@ -36,6 +37,8 @@ public class EjecutarSemanaDos {
                 impar++;
         }
         System.out.println("El numero de impares es: " + impar + " El numero de pares es: " + par);
+
+        
 
     }
 }
