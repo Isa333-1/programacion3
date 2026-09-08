@@ -1,7 +1,8 @@
 package Semana3;
-
-public class Matrices {
-    public static void main(String[] args) {
+public class Matrices 
+{
+    public static void main(String[] args) 
+    {
         
         //Declaracion de la matriz (forma 1)
         int [][]m = {{5,8,6},
@@ -9,5 +10,23 @@ public class Matrices {
                      {4,9,7}};
 
         //Recorrido de la matriz
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[0].length; j++) { //m[0] hace referncia a las columnas
+                System.out.println("m[" + i + "][" + j + "]=" + m[i][j]);    
+            }
+        }
+
+        //Visualizar de mejor manera la matriz
+        String cad = "";
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[0].length; j++) { //m[0] hace referncia a las columnas
+                cad += "|" + m[i][j];        
+            }
+            cad += "|\n";
+        }
+        System.out.println(cad);     
+            
+        
+
     }
 }
