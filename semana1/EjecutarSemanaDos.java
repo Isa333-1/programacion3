@@ -24,6 +24,18 @@ public class EjecutarSemanaDos {
         }
 
 
+        //Ejercicios del diagnostico
+        int []v = {3,10,5,9,11,22,1,14,25,7,8,19};
+        int par = 0;
+        int impar = 0;
+
+        for (int i = 0; i < v.length; i++) {
+            if (v[i] %2  == 0)
+                par++;
+            else
+                impar++;
+        }
+        System.out.println("El numero de impares es: " + impar + " El numero de pares es: " + par);
 
     }
 }
