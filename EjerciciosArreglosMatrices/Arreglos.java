@@ -31,9 +31,11 @@ public class Arreglos
         {
             if (A[i] % 2 == 0)
             {
-                []par = A[i];
+                par[numeroPar] = A[i];
+                numeroPar++;
             }else{
-                contadorImpar++;
+                impar[numeroImpar] = A[i];
+                numeroImpar++;
             }
         }
     }
