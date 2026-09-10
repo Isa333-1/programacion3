@@ -18,7 +18,6 @@ public class Arreglos
         }else{
             contadorImpar++;
         }
-
     }
 
 
