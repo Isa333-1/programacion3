@@ -38,6 +38,27 @@ public class Arreglos
                 numeroImpar++;
             }
         }
+
+        System.out.print("Arreglo A = ");
+        for (int i = 0; i < A.length; i++) 
+        {
+            System.out.print(A[i] + " "); 
+        }
+        System.out.println();
+
+        System.out.print("Arreglo par = ");
+        for (int i = 0; i < par.length; i++) 
+        {
+            System.out.print(par[i] + " "); 
+        }
+        System.out.println();
+
+        System.out.print("Arreglo impar = ");
+        for (int i = 0; i < impar.length; i++) 
+        {
+            System.out.print(impar[i] + " "); 
+        }
+        System.out.println();
     }
     
 
