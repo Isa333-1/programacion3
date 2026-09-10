@@ -24,11 +24,14 @@ public class Arreglos
         int [] par = new int[contadorPar];
         int [] impar = new int[contadorImpar];
 
+        int numeroPar = 0;
+        int numeroImpar = 0;
+
         for (int i = 0; i < A.length; i++)
         {
             if (A[i] % 2 == 0)
             {
-                contadorPar++;
+                []par = A[i];
             }else{
                 contadorImpar++;
             }
