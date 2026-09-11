@@ -80,6 +80,17 @@ public class Arreglos
         }
         System.out.println();
 
+        int numMayor = v[0];
+        int numMenor = v[0];
+
+        for (int i = 0; i < v.length; i++) {
+            if (v[i] > numMayor)
+                numMayor = v[i];
+            if (v[i] < numMenor)
+                numMenor = v[i];
+        }
+
+        System.out.println("El mayor es: " + numMayor + " el menor es: " + numMenor);
 
 
 
