@@ -108,6 +108,24 @@ public class Arreglos
                         + "Numero de veces que el numero mayor se repite: " + contMayor + "\n" 
                         + "Numero de veces que el numero menor se repite: " + contMenor + "\n");
 
+        
+       //Ejercicio 9
+
+        int []g = new int[33];
+        int num = (int)(Math.random() * (max - min + 1)) + min;
+
+        for (int i = 0; i < g.length; i++) 
+        {
+            g[i] = (int)(Math.random() * (max - min + 1)) + min;
+        }
+            
+        System.out.print("Arreglo g = ");
+        for (int i = 0; i < g.length; i++) 
+        {
+            System.out.print(g[i] + " "); 
+        }
+        
+        System.out.println("\nNumero = " + num);
 
 
 
