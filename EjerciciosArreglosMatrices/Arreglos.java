@@ -110,7 +110,8 @@ public class Arreglos
 
         
        //Ejercicio 9
-
+       
+        max = 50;
         int []g = new int[33];
         int num = (int)(Math.random() * (max - min + 1)) + min;
 
@@ -124,8 +125,21 @@ public class Arreglos
         {
             System.out.print(g[i] + " "); 
         }
-        
+
         System.out.println("\nNumero = " + num);
+        
+        int contNum = 0;
+        for (int i = 0; i < g.length; i++) {
+            if (g[i] == num)
+                contNum++;
+        }
+
+        System.out.println("Numero de veces que se repite el numero " + num + " = " + contNum);
+
+
+        
+
+
 
 
 
