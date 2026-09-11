@@ -58,12 +58,35 @@ public class Arreglos
         {
             System.out.print(impar[i] + " "); 
         }
+        System.out.println("\n");
+
+
+        //Ejercicio 8
+
+        int [] v = new int [30];
+
+        int max = 100;
+        int min = 1;
+
+        for (int i = 0; i < v.length; i++)
+        {
+            v[i]= (int)(Math.random() * (max - min + 1)) + min;  
+        }
+
+        System.out.print("Arreglo v = ");
+        for (int i = 0; i < v.length; i++) 
+        {
+            System.out.print(v[i] + " "); 
+        }
         System.out.println();
+
+
+
+
+
+
+
+
     }
-    
-
-
-
-
     
 }
