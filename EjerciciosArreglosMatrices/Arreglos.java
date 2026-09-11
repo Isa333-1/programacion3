@@ -83,14 +83,30 @@ public class Arreglos
         int numMayor = v[0];
         int numMenor = v[0];
 
-        for (int i = 0; i < v.length; i++) {
+        for (int i = 0; i < v.length; i++) 
+        {
             if (v[i] > numMayor)
                 numMayor = v[i];
             if (v[i] < numMenor)
                 numMenor = v[i];
         }
 
-        System.out.println("El mayor es: " + numMayor + " el menor es: " + numMenor);
+
+        int contMayor = 0;
+        int contMenor = 0;
+
+        for (int i = 0; i < v.length; i++) 
+        {
+            if (v[i] == numMayor)
+                contMayor++;
+            if (v[i] == numMenor)
+                contMenor++;
+        }
+
+        System.out.println("El mayor es: " + numMayor + "\n" 
+                        + "El menor es: " + numMenor + "\n"
+                        + "Numero de veces que el numero mayor se repite: " + contMayor + "\n" 
+                        + "Numero de veces que el numero menor se repite: " + contMenor + "\n");
 
 
 
