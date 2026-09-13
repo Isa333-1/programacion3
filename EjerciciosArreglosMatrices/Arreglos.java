@@ -269,17 +269,46 @@ public class Arreglos
 
         //Ejercicio 13
 
-        int [] n = {2, 6, 9, 5, 15, 48,7,36};
+        int [] l = {2, 6, 9, 5, 15, 48,7,36};
         double suma = 0;
 
-        for (int i = 0; i < n.length; i++) {
-            suma += n[i];
+        for (int i = 0; i < l.length; i++) {
+            suma += l[i];
         }
 
-        double promedio = suma / n.length;
+        double promedio = suma / l.length;
 
         int contMayProm = 0;
         int contMenProm = 0;
+
+        for (int i = 0; i < l.length; i++) 
+        {
+            if (l[i] > promedio)
+                contMayProm++;
+            else if (l[i] < promedio)
+                contMenProm++;
+        }
+
+        int [] u = new int[contMayProm];
+        int [] r = new int[contMenProm];
+        int indMayor = 0;
+        int indMenor = 0;
+
+        for (int i = 0; i < r.length; i++) 
+        {
+            if (l[i] > promedio)
+            {
+                u[indMayor] = l[i];
+                indMayor++;
+            }else if (l[i] < promedio)
+            {
+                r[indMenor] = l[i];
+                indMenor++;
+            }
+                
+
+            
+        }
 
 
     }
