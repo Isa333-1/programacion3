@@ -163,7 +163,7 @@ public class Arreglos
 
         //Ejercicio 11
 
-        int [] h = {1, -9, 0, 7, 12};
+        int [] h = {1, -9, 0, 7, 12, 15, 0};
         int contNeg = 0;
         int contPos = 0;
         int contCero = 0;
@@ -171,22 +171,61 @@ public class Arreglos
         for (int i = 0; i < h.length; i++) 
         {
             if (h[i] < 0)
-                contNeg++
+                contNeg++;
             else if (h[i] > 0)
-                contPos++
+                contPos++;
             else if (h[i] == 0)
-                contCero++    
+                contCero++;    
         }
 
+        int [] n = new int[contNeg];
+        int [] p = new int[contPos];
+        int [] c = new int[contCero];
 
-        
+        int indNeg = 0;
+        int indCero = 0;
+        int indPos = 0;
 
+        for (int i = 0; i < h.length; i++)
+        {
+            if (h[i] < 0)
+            {
+                n[indNeg] = h[i];
+                indNeg++;
+            }else if (h[i] == 0)
+            {
+                c[indCero] = h[i];
+                indCero++;
+            }else
+            {
+                p[indPos] = h[i];
+                indPos++;
+            }
+        }
 
+        System.out.print("\n\nArreglo h = ");
+        for (int i = 0; i < h.length; i++) 
+        {
+            System.out.print(h[i] + " "); 
+        }
 
+        System.out.print("\nArreglo positivo = ");
+        for (int i = 0; i < p.length; i++) 
+        {
+            System.out.print(p[i] + " "); 
+        }
 
+        System.out.print("\nArreglo negativo = ");
+        for (int i = 0; i < n.length; i++) 
+        {
+            System.out.print(n[i] + " "); 
+        }
 
-
-
+        System.out.print("\nArreglo cero = ");
+        for (int i = 0; i < c.length; i++) 
+        {
+            System.out.print(c[i] + " "); 
+        }
 
     }
     
