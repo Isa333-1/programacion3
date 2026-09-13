@@ -161,6 +161,22 @@ public class Arreglos
             System.out.print(b[i] + " "); 
         }
 
+        //Ejercicio 11
+
+        int [] h = {1, -9, 0, 7, 12};
+        int contNeg = 0;
+        int contPos = 0;
+        int contCero = 0;
+
+        for (int i = 0; i < h.length; i++) 
+        {
+            if (h[i] < 0)
+                contNeg++
+            else if (h[i] > 0)
+                contPos++
+            else if (h[i] == 0)
+                contCero++    
+        }
 
 
         
