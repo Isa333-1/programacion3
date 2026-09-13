@@ -294,7 +294,7 @@ public class Arreglos
         int indMayor = 0;
         int indMenor = 0;
 
-        for (int i = 0; i < r.length; i++) 
+        for (int i = 0; i < l.length; i++) 
         {
             if (l[i] > promedio)
             {
@@ -304,10 +304,27 @@ public class Arreglos
             {
                 r[indMenor] = l[i];
                 indMenor++;
-            }
-                
+            } 
+        }
 
-            
+        System.out.print("\n\nArreglo l = ");
+        for (int i = 0; i < l.length; i++) 
+        {
+            System.out.print(l[i] + " "); 
+        }
+
+        System.out.println("\nEl promedio es: " + promedio);
+
+        System.out.print("Arreglo numeros mayores que la media = ");
+        for (int i = 0; i < u.length; i++) 
+        {
+            System.out.print(u[i] + " "); 
+        }
+
+        System.out.print("\nArreglo numeros menores que la media = ");
+        for (int i = 0; i < r.length; i++) 
+        {
+            System.out.print(r[i] + " "); 
         }
 
 
