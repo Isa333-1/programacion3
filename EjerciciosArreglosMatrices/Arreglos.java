@@ -278,6 +278,9 @@ public class Arreglos
 
         double promedio = suma / n.length;
 
+        int contMayProm = 0;
+        int contMenProm = 0;
+
 
     }
     
