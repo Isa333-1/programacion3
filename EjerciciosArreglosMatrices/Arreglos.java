@@ -232,6 +232,18 @@ public class Arreglos
         int [] k = {2, 5, 96, 35, 8, 41, 3, 5, 3};
         int x = 3;
 
+        int contador = 0;
+
+        for (int i = 0; i < k.length; i++) 
+        {
+            if (k[i] == 0)
+                contador++;
+        }
+
+        int [] z = new int[contador];
+
+        
+
     }
     
 }
