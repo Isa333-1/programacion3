@@ -236,13 +236,48 @@ public class Arreglos
 
         for (int i = 0; i < k.length; i++) 
         {
-            if (k[i] == 0)
+            if (k[i] == x)
                 contador++;
         }
 
         int [] z = new int[contador];
 
-        
+        int indZ = 0;
+
+        for (int i = 0; i < k.length; i++) 
+        {
+            if (k[i] == x )
+            {
+               z[indZ] = i + 1;
+               indZ++;   
+            }
+        }
+
+        System.out.print("\n\nArreglo k = ");
+        for (int i = 0; i < k.length; i++) 
+        {
+            System.out.print(k[i] + " "); 
+        }
+
+        System.out.println("\nx = " + x);
+
+        System.out.print("Arreglo z = ");
+        for (int i = 0; i < z.length; i++) 
+        {
+            System.out.print(z[i] + " "); 
+        }
+
+        //Ejercicio 13
+
+        int [] n = {2, 6, 9, 5, 15, 48,7,36};
+        double suma = 0;
+
+        for (int i = 0; i < n.length; i++) {
+            suma += n[i];
+        }
+
+        double promedio = suma / n.length;
+
 
     }
     
