@@ -111,7 +111,7 @@ public class Arreglos
         
        //Ejercicio 9
        
-        max = 50;
+        max = 20;
         int []g = new int[33];
         int num = (int)(Math.random() * (max - min + 1)) + min;
 
@@ -135,6 +135,11 @@ public class Arreglos
         }
 
         System.out.println("Numero de veces que se repite el numero " + num + " = " + contNum);
+
+        //Ejercicio 10
+
+        int []a = {10, 5, 3, 6, 8, 4, 5};
+        int [] b = new int[(a.length + 1)/2];
 
 
         
