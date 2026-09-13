@@ -134,19 +134,34 @@ public class Arreglos
                 contNum++;
         }
 
-        System.out.println("Numero de veces que se repite el numero " + num + " = " + contNum);
+        System.out.println("Numero de veces que se repite el numero " + num + " = " + contNum + "\n");
 
         //Ejercicio 10
 
-        int []a = {10, 5, 3, 6, 8, 4, 5};
+        int []a = {10, 5, 3, 6, 8, 4, 3};
         int [] b = new int[(a.length + 1)/2];
 
-        for (int i = 0; i < b.length/2; i++) 
+        for (int i = 0; i < b.length; i++) 
         {
-            b[i] = a[i] + a[a.length -1 -i];
+            if(i == (a.length -1 -i))
+                b[i] = a[i];
+            else
+                b[i] = a[i] + a[a.length -1 -i];
         }
 
-        
+        System.out.print("Arreglo a = ");
+        for (int i = 0; i < a.length; i++) 
+        {
+            System.out.print(a[i] + " "); 
+        }
+
+        System.out.print("\nArreglo b = ");
+        for (int i = 0; i < b.length; i++) 
+        {
+            System.out.print(b[i] + " "); 
+        }
+
+
 
         
 
