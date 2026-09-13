@@ -227,6 +227,11 @@ public class Arreglos
             System.out.print(c[i] + " "); 
         }
 
+        //Ejercicio 12
+
+        int [] k = {2, 5, 96, 35, 8, 41, 3, 5, 3};
+        int x = 3;
+
     }
     
 }
