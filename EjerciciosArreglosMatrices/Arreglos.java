@@ -141,6 +141,12 @@ public class Arreglos
         int []a = {10, 5, 3, 6, 8, 4, 5};
         int [] b = new int[(a.length + 1)/2];
 
+        for (int i = 0; i < b.length/2; i++) 
+        {
+            b[i] = a[i] + a[a.length -1 -i];
+        }
+
+        
 
         
 
