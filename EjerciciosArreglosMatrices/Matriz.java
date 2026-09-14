@@ -195,23 +195,32 @@ public class Matriz
         System.out.print(cadena);
 
         //Ejercicio 24
-        int [][ t = {{4, 5, 9, 5, 3, 6, 5, 7, 4, 8, 8, 4},
+        int [][] e = {{4, 5, 9, 5, 3, 6, 5, 7, 4, 8, 8, 4},
                      {1, 2, 8, 6, 8, 4, 7, 3, 9, 7, 1, 3},
-                     {9, 2, 5, 7, 8, 6, 1, 3, 9, 2, 10, 11}};
+                     {9, 2, 5, 7, 8, 6, 1, 3, 9, 2, 10, 11},
+                     {7, 5, 2, 9, 3, 7, 5, 10, 8, 9, 11, 7}};
         
-        double [] proMes = new double [t[0].length];
+        double [] proMes = new double [e[0].length];
 
-        for (int j = 0; j < t[0].length; j++) 
+        for (int j = 0; j < e[0].length; j++) 
         {
             double suma = 0;
-            for (int i = 0; i < t.length; i++) 
+            for (int i = 0; i < e.length; i++) 
             {
-                suma += t[i][j];
+                suma += e[i][j];
             }
-            proMes[j] = suma;
+            proMes[j] = suma / e.length;
         }
 
+        double sumAnual = 0;
 
+        for (int j = 0; j < e[0].length; j++) 
+        {
+            sumAnual += proMes[j];
+        }
+        double promAnual = sumAnual / e[0].length;
+
+        System.out.println("Promedio anual: " + promAnual);
         
 
         
