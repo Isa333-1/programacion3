@@ -99,7 +99,7 @@ public class Matriz
         {
             for (int j = 0; j < k.length; j++) 
             {
-                if (i + j == 9)
+                if (j >= i)
                     k[i][j] = 0;
                 else
                     k[i][j] = 1;  
@@ -107,9 +107,59 @@ public class Matriz
             
         }
 
+        System.out.println();
+        cadena = "";
+        for (int i = 0; i < k.length; i++)
+        {
+            for (int j = 0; j < k[0].length; j++) 
+            {
+                cadena += "|" + k[i][j];
+            }
+            cadena += "|\n";
+        }
+        System.out.print(cadena);
+
         //Ejercicio 21
 
+        int [][] r = {{4, 8, 9, 1},
+                      {5, 7, 6, 4},
+                      {7, 8, 3, 8},
+                      {9, 7, 1, 6} };
+
+        int [] s = new int[r.length];
+
+        for (int i = 0; i < r.length; i++) 
+        {
+            int suma = 0;
+            for (int j = 0; j < r.length; j++) 
+            {
+                if (r[i][j] % 2 == 0)
+                    suma += r[i][j];   
+            }   
+            s[i] = suma;
+        }
+
+        System.out.println();
+        cadena = "";
+        for (int i = 0; i < r.length; i++)
+        {
+            for (int j = 0; j < r[0].length; j++) 
+            {
+                cadena += "|" + r[i][j];
+            }
+            cadena += "|\n";
+        }
+        System.out.print(cadena);
+
+        System.out.print("\n\nVector B = ");
+        for (int i = 0; i < s.length; i++) 
+        {
+            System.out.print(s[i] + " "); 
+        }
+
+
         //Ejercicio 22
+        
 
         //Ejercicio 24
 
