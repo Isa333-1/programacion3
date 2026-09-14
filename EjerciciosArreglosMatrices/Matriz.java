@@ -198,6 +198,18 @@ public class Matriz
         int [][ t = {{4, 5, 9, 5, 3, 6, 5, 7, 4, 8, 8, 4},
                      {1, 2, 8, 6, 8, 4, 7, 3, 9, 7, 1, 3},
                      {9, 2, 5, 7, 8, 6, 1, 3, 9, 2, 10, 11}};
+        
+        double [] proMes = new double [t[0].length];
+
+        for (int j = 0; j < t[0].length; j++) 
+        {
+            double suma = 0;
+            for (int i = 0; i < t.length; i++) 
+            {
+                suma += t[i][j];
+            }
+            proMes[j] = suma;
+        }
 
 
         
