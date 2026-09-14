@@ -44,7 +44,7 @@ public class Matriz
         }
 
         //Ejercicio 18
-        int [][] t = new int[10][10]
+        int [][] t = new int[10][10];
 
         for (int i = 0; i < 10; i++) 
         {
@@ -53,6 +53,66 @@ public class Matriz
                 t[i][j] = (i + 1) * (j + 1);    
             }
         }
+
+        System.out.println();
+        for (int i = 0; i < 10; i++) 
+        {
+           for (int j = 0; j < 10; j++) 
+            {
+                System.out.print(t[i][j] + "\t" );
+           } 
+           System.out.println();
+        }
+
+        //Ejercicio 19
+
+        int [][] d = new int[4][4];
+
+        for (int i = 0; i < d.length; i++) 
+        {
+            for (int j = 0; j < d.length; j++) 
+            {
+                if (i == j)
+                    d[i][j] = 1;
+                else
+                    d[i][j] = 0;  
+            }
+            
+        }
+
+        System.out.println();
+        cadena = "";
+        for (int i = 0; i < d.length; i++)
+        {
+            for (int j = 0; j < d[0].length; j++) 
+            {
+                cadena += "|" + d[i][j];
+            }
+            cadena += "|\n";
+        }
+        System.out.print(cadena);
+
+        //Ejercicio 20
+        int [][] k = new int[10][10];
+
+        for (int i = 0; i < k.length; i++) 
+        {
+            for (int j = 0; j < k.length; j++) 
+            {
+                if (i + j == 9)
+                    k[i][j] = 0;
+                else
+                    k[i][j] = 1;  
+            }
+            
+        }
+
+        //Ejercicio 21
+
+        //Ejercicio 22
+
+        //Ejercicio 24
+
 
         
 
