@@ -171,6 +171,17 @@ public class Matriz
 
         int [][] y = new int[fila][col];
 
+
+        for (int i = 0; i < y.length; i++) 
+        {
+            for (int j = 0; j < y.length; j++) 
+            {
+                System.out.println("Ingreselos valores para la matriz [" +i + "] " + "[" + j + "]");
+                y[i][j] = numero.nextInt();
+            }
+            
+        }
+
         System.out.println();
         cadena = "";
         for (int i = 0; i < y.length; i++)
