@@ -195,6 +195,9 @@ public class Matriz
         System.out.print(cadena);
 
         //Ejercicio 24
+        int [][ t = {{4, 5, 9, 5, 3, 6, 5, 7, 4, 8, 8, 4},
+                     {1, 2, 8, 6, 8, 4, 7, 3, 9, 7, 1, 3},
+                     {9, 2, 5, 7, 8, 6, 1, 3, 9, 2, 10, 11}};
 
 
         
