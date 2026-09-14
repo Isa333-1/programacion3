@@ -1,5 +1,7 @@
 package EjerciciosArreglosMatrices;
 
+import java.util.Scanner;
+
 public class Matriz 
 {
     public static void main(String[] args) 
@@ -159,7 +161,27 @@ public class Matriz
 
 
         //Ejercicio 22
-        
+        Scanner numero = new Scanner(System.in);
+
+        System.out.println("\nIngrese el numero de filas de la matriz : ");
+        int fila = numero.nextInt();
+
+        System.out.println("Ingrese el numero de columnas de la matriz : ");
+        int col = numero.nextInt();
+
+        int [][] y = new int[fila][col];
+
+        System.out.println();
+        cadena = "";
+        for (int i = 0; i < y.length; i++)
+        {
+            for (int j = 0; j < y[0].length; j++) 
+            {
+                cadena += "|" + y[i][j];
+            }
+            cadena += "|\n";
+        }
+        System.out.print(cadena);
 
         //Ejercicio 24
 
