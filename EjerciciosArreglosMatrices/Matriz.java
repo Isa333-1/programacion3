@@ -220,7 +220,26 @@ public class Matriz
         }
         double promAnual = sumAnual / e[0].length;
 
+        int mesesSup = 0;
+        int mesesInf = 0; 
+        double maxPro = proMes[0];
+        int mesMayProd = 0; 
+
+        for (int j = 0; j < e[0].length; j++) 
+        {
+            if (proMes[j] > promAnual)
+                mesesSup++;
+            else if (proMes[j] < promAnual)
+                mesesInf++;
+            if (proMes[j] > maxPro )
+            {
+                maxPro = proMes[j];
+                mesMayProd = j;
+            }
+        }
+
         System.out.println("Promedio anual: " + promAnual);
+        System.out.println("Meses de cosecha superior al promedio: " + mesesSup);
         
 
         
