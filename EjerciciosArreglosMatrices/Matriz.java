@@ -195,12 +195,12 @@ public class Matriz
         System.out.print(cadena);
 
         //Ejercicio 24
-        int [][] e = {{4, 5, 9, 5, 3, 6, 5, 7, 4, 8, 8, 4},
+        int [][] e = {{4, 5, 9, 5, 3, 6, 5, 7, 4, 8, 7, 4},
                      {1, 2, 8, 6, 8, 4, 7, 3, 9, 7, 1, 3},
                      {9, 2, 5, 7, 8, 6, 1, 3, 9, 2, 10, 11},
                      {7, 5, 2, 9, 3, 7, 5, 10, 8, 9, 11, 7}};
         
-        double [] proMes = new double [e[0].length];
+        double [] prodMes = new double [e[0].length];
 
         for (int j = 0; j < e[0].length; j++) 
         {
@@ -209,38 +209,56 @@ public class Matriz
             {
                 suma += e[i][j];
             }
-            proMes[j] = suma / e.length;
+            prodMes[j] = suma;
         }
 
         double sumAnual = 0;
 
         for (int j = 0; j < e[0].length; j++) 
         {
-            sumAnual += proMes[j];
+            sumAnual += prodMes[j];
         }
         double promAnual = sumAnual / e[0].length;
 
         int mesesSup = 0;
         int mesesInf = 0; 
-        double maxPro = proMes[0];
+        double maxPro = prodMes[0];
         int mesMayProd = 0; 
 
         for (int j = 0; j < e[0].length; j++) 
         {
-            if (proMes[j] > promAnual)
-                mesesSup++;
-            else if (proMes[j] < promAnual)
-                mesesInf++;
-            if (proMes[j] > maxPro )
+            if (prodMes[j] > promAnual)
             {
-                maxPro = proMes[j];
+                mesesSup++;
+            }else if (prodMes[j] < promAnual)
+            {
+                mesesInf++;
+            }
+                
+            if (prodMes[j] > maxPro )
+            {
+                maxPro = prodMes[j];
                 mesMayProd = j;
             }
         }
 
+        System.out.println();
+        cadena = "";
+        for (int i = 0; i < e.length; i++)
+        {
+            for (int j = 0; j < e[0].length; j++) 
+            {
+                cadena += "|" + e[i][j];
+            }
+            cadena += "|\n";
+        }
+        System.out.print(cadena);
+
+        
         System.out.println("Promedio anual: " + promAnual);
         System.out.println("Meses de cosecha superior al promedio: " + mesesSup);
-        
+        System.out.println("Meses de cosecha inferiores al promedio: " + mesesInf);
+        System.out.println("El mes en el que se produjo mayor numero de toneladas fue: " + (mesMayProd + 1));
 
         
 
